@@ -14,15 +14,18 @@
 }
 
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%; /* 100% = 16px, 62.5% = 10px -> 1rem = 10px */
   line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
 }
 
 /* others */

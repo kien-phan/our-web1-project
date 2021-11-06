@@ -203,14 +203,16 @@
     position: absolute;
     right: -64px;
     top: 8px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     display: block;
+    transform-origin: center;
     transition: all ease 0.5s;
     transform: rotate(0);
+    line-height: 100%;
   }
 
   .category__inside-list .cate-list-open {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-4px);
     color: var(--primary-color);
   }
 

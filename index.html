@@ -18,20 +18,41 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <!-- google roboto fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- google roboto fonts -->
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> <!-- font awesome-->
 
 </head>
 <body>
     <div class="app">
-        <header class="header">
+        <a href="#top-page" class="return-top">
+            <i class="ti-angle-up"></i>
+        </a>
+        <script>
+            var scrollToTopBtn = document.querySelector(".return-top");
+            var rootElement = document.documentElement;
+
+            function handleScroll() {
+            // Do something on scroll
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+            if (rootElement.scrollTop / scrollTotal > 0.5) {
+                // Show button
+                scrollToTopBtn.classList.add("return-top-active");
+            } else {
+                // Hide button
+                scrollToTopBtn.classList.remove("return-top-active");
+            }
+            }
+            document.addEventListener("scroll", handleScroll);
+        </script>
+        <header id="top-page" class="header">
             <div class="grid wide">
                 <div class="header-wrap">
                     <div class="header__logo">
                         <a href="#" class="header__logo-link">
-                            <img src="./assets/img/header__logo.webp" alt="Home" class="header__logo-img">
+                            <img src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/logo.png?1630398243026" alt="Home" class="header__logo-img">
+                            <img src="https://bizweb.dktcdn.net/100/434/558/themes/831317/assets/logo_mb.png?1630398243026" alt="" class="header__logo-img-mobile">
                         </a>
                     </div>
                     
@@ -67,7 +88,7 @@
                                                                                          C16.8,14.8,15.8,16,14.4,16.9z"></path>
                             </svg>
                             <div class="header__hotline-number">
-                                <strong>Hotline: </strong>
+                                <span>Hotline: </span>
                                 19006750
                             </div>
                         </a>
@@ -106,151 +127,162 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="header__navbar">
-                    <div class="category">
-                        <div class="category__outside">
-                            <i class="ti-align-justify category__outside-icon"></i>
-                            <div class="category__outside-label">Danh mục sản phẩm</div>
-                        </div>
-
-                        <div class="category__inside">
-                            <div class="category__inside-wrap">
-                                <ul class="category__inside-list">
-                                    <a href="" class="category__inside-heading">VPP Học sinh</a>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Vở</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Balo</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bọc vở</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Nhãn vở</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Tẩy</a>
-                                    </li>
-                                </ul>
-                                <ul class="category__inside-list">
-                                    <a href="" class="category__inside-heading">VPP Văn phòng</a>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Kẹp tài liệu</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Sổ tài liệu</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bắn ghim</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Giấy note</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Giấy in</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Trang trí văn phòng</a>
-                                    </li>
-                                </ul>
-                                <ul class="category__inside-list">
-                                    <a href="" class="category__inside-heading">Dụng cụ vẽ</a>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút vẽ</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Màu vẽ</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Khay - Cọ vẽ</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Tập vẽ - Giấy vẽ</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bộ vẽ sáng tạo</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Giá vẽ - Khung vẽ</a>
-                                    </li>
-                                </ul>
-                                <ul class="category__inside-list">
-                                    <a href="" class="category__inside-heading">Bút viết</a>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút chì</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút bi</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút nước</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút lông</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút dạ quang</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Bút mực</a>
-                                    </li>
-                                </ul>
-                                <ul class="category__inside-list">
-                                    <a href="" class="category__inside-heading">Sản phẩm về giấy</a>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Sổ các loại</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Tập - Vở</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Giấy note</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Sticker</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Các loại giấy khác</a>
-                                    </li>
-                                    <li class="category__inside-item">
-                                        <a href="" class="category__inside-item-link">Nhãn vở - Nhãn tên</a>
-                                    </li>
-                                </ul>
+            </div>
+            <div class="header__navbar-wrap">
+                <div class="grid wide">
+                    <div class="header__navbar">
+                        <div class="category">
+                            <div class="category__outside">
+                                <i class="ti-align-justify category__outside-icon"></i>
+                                <div class="category__outside-label">Danh mục sản phẩm</div>
+                            </div>
+                    
+                            <div class="category__inside">
+                                <div class="category__inside-mobile-head">
+                                    <span>Danh mục sản phẩm</span>
+                                </div>
+                                <div class="category__inside-wrap">
+                                    <ul class="category__inside-list">
+                                        <a href="" class="category__inside-heading">VPP Học sinh</a>
+                                        <i class="fas fa-sort-down"></i>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Vở</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Balo</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bọc vở</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Nhãn vở</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Tẩy</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="category__inside-list">
+                                        <a href="" class="category__inside-heading">VPP Văn phòng</a>
+                                        <i class="fas fa-sort-down"></i>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Kẹp tài liệu</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Sổ tài liệu</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bắn ghim</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Giấy note</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Giấy in</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Trang trí văn phòng</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="category__inside-list">
+                                        <a href="" class="category__inside-heading">Dụng cụ vẽ</a>
+                                        <i class="fas fa-sort-down"></i>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút vẽ</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Màu vẽ</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Khay - Cọ vẽ</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Tập vẽ - Giấy vẽ</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bộ vẽ sáng tạo</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Giá vẽ - Khung vẽ</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="category__inside-list">
+                                        <a href="" class="category__inside-heading">Bút viết</a>
+                                        <i class="fas fa-sort-down"></i>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút chì</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút bi</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút nước</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút lông</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút dạ quang</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Bút mực</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="category__inside-list">
+                                        <a href="" class="category__inside-heading">Sản phẩm về giấy</a>
+                                        <i class="fas fa-sort-down"></i>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Sổ các loại</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Tập - Vở</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Giấy note</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Sticker</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Các loại giấy khác</a>
+                                        </li>
+                                        <li class="category__inside-item">
+                                            <a href="" class="category__inside-item-link">Nhãn vở - Nhãn tên</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="header__navbar-slogan">
-                        <span></span>
-                    </div>
-                    <div class="header__navbar-menu-wrap">
-                        <div class="header__navbar-menu-item">
-                            <a href="" class="header__navbar-link">
-                                <i class="fas fa-fire header__navbar-icon"></i>
-                                <span>Khuyến mãi</span>
-                            </a>
+                        <div class="header__navbar-slogan">
+                            <span></span>
                         </div>
-                        <div class="header__navbar-menu-item">
-                            <a href="" class="header__navbar-link">
-                                <i class="ti-shield header__navbar-icon header__navbar-icon--padding"></i>
-                                <span>Dịch vụ</span>
-                            </a>
-                        </div>
-                        <div class="header__navbar-menu-item">
-                            <a href="" class="header__navbar-link">
-                                <i class="fas fa-bullhorn header__navbar-icon"></i>
-                                <span>Tin tức</span>
-                            </a>
-                        </div>
-                        <div class="header__navbar-menu-item">
-                            <a href="" class="header__navbar-link">
-                                <i class="ti-email header__navbar-icon header__navbar-icon--padding"></i>
-                                <span>Liên hệ</span>
-                            </a>
+                        <div class="header__navbar-menu-wrap">
+                            <div class="header__navbar-menu-item">
+                                <a href="" class="header__navbar-link">
+                                    <i class="fas fa-fire header__navbar-icon"></i>
+                                    <span>Khuyến mãi</span>
+                                </a>
+                            </div>
+                            <div class="header__navbar-menu-item">
+                                <a href="" class="header__navbar-link">
+                                    <i class="ti-shield header__navbar-icon header__navbar-icon--padding"></i>
+                                    <span>Dịch vụ</span>
+                                </a>
+                            </div>
+                            <div class="header__navbar-menu-item">
+                                <a href="" class="header__navbar-link">
+                                    <i class="fas fa-bullhorn header__navbar-icon"></i>
+                                    <span>Tin tức</span>
+                                </a>
+                            </div>
+                            <div class="header__navbar-menu-item">
+                                <a href="" class="header__navbar-link">
+                                    <i class="ti-email header__navbar-icon header__navbar-icon--padding"></i>
+                                    <span>Liên hệ</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -722,7 +754,7 @@
                             <div class="carousel slide carousel-2" data-ride="carousel">
                                 <div class="carousel-inner carousel-inner-2" style="cursor: grab;">
                                     <div class="carousel-item active">
-                                        <div class="col l-4">
+                                        <div class="col l-4 m-4 c-6 no-gutter-default">
                                                 <div class="product-item">
                                                     <div class="product-action">
                                                         <a href="" class="product-action__link">
@@ -753,7 +785,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="col l-4">
+                                        <div class="col l-4 m-4 c-6 no-gutter-default">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -782,7 +814,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="col l-4">
+                                        <div class="col l-4 m-4 c-6 no-gutter-default">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -811,7 +843,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="col l-4">
+                                        <div class="col l-4 m-4 c-6 no-gutter-default">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1585,10 +1617,12 @@
                             if (this == selectItems[0]) {
                                 tab1.style.display = 'block'
                                 tab2.style.display = 'none'
+                                tab3.style.display = 'none'
                             }
                             else if (this == selectItems[1]) {
                                 tab2.style.display = 'block'
                                 tab1.style.display = 'none'
+                                tab3.style.display = 'none'
                             }
                             else if (this == selectItems[2] || this == selectItems[3] || this == selectItems[4])
                             {
@@ -1659,7 +1693,7 @@
         <div class="footer">
             <div class="grid wide footer__content">
                 <div class="row">
-                    <div class="col l-5 ">
+                    <div class="col l-5 m-12 no-gutter-default">
                         <a href="" class="footer__content-logo-link">
                             <img src="./assets/img/logo_footer.webp" alt="" class="footer__content-img">
                         </a>
@@ -1687,7 +1721,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 no-gutter-default">
                         <h3 class="footer__content-heading">TÌM HIỂU THÊM</h3>
                         <ul class="footer__content-list">
                             <li class="footer__content-item">
@@ -1707,7 +1741,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 no-gutter-default">
                         <h3 class="footer__content-heading">HỖ TRỢ KHÁCH HÀNG</h3>
                         <ul class="footer__content-list">
                             <li class="footer__content-item">
@@ -1727,7 +1761,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-4 no-gutter-default">
                         <h3 class="footer__content-heading">THEO DÕI CHÚNG TÔI</h3>
                         <ul class="footer__social-list">
                             <li class="footer__social-item">
@@ -2005,6 +2039,8 @@
                 })  
             }, 3000)
     </script>
+    <div class="overlay-cate"></div>
+   
     <script src="./assets/js/fileJS.js"></script>
 </body>
 </html>

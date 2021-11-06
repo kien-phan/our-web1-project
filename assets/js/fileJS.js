@@ -1,3 +1,35 @@
+//cate header
+var cate = document.querySelector('.category')
+var cateInside = document.querySelector('.category__inside') 
+var overlay = document.querySelector('.overlay-cate')   
+cate.addEventListener('click', function () {
+    overlay.style.display = 'block';
+})
+overlay.addEventListener('click', function () {
+    overlay.style.display = 'none'
+})
+
+//cate show list
+var arrowIcons = document.querySelectorAll('.category__inside-list i')
+var cateListHeading = document.querySelectorAll('.category__inside-heading')
+for (icon of arrowIcons) {
+    icon.onclick = function () {
+        this.classList.toggle('cate-list-open')
+        var nextSibling = this.nextElementSibling;
+        while (nextSibling) {
+            nextSibling.classList.toggle('cate-item-open')
+            nextSibling = nextSibling.nextElementSibling;
+        }
+        var prevSibling = this.previousElementSibling;
+        while (prevSibling) {
+            prevSibling.classList.toggle('change-to-primary-color')
+            prevSibling = prevSibling.nextElementSibling;
+        }
+    }
+}
+
+
+//flash sale timer
 var countDownDate = new Date("Jan 1, 2022 0:0:0").getTime();
 var x = setInterval(function() {
 
@@ -43,6 +75,31 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+
+    // like
+    var productLikeLinks = document.querySelectorAll(".product-action__link")
+    var quantityOfLike = document.querySelector('.header__user-count');
+    var likeNumber = parseInt(quantityOfLike.innerText);
+    for (var link of productLikeLinks) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            var icon = this.querySelector('.product-action__icon')
+            if (icon.classList.contains('ti-heart')) {
+                icon.classList.remove('ti-heart')
+                icon.classList.add('fas', 'fa-heart')
+                likeNumber += 1
+                quantityOfLike.innerText = likeNumber
+            }
+            else {
+                icon.classList.add('ti-heart')
+                icon.classList.remove('fas', 'fa-heart')
+                likeNumber -= 1
+                quantityOfLike.innerText = likeNumber
+            }
+        })
+    }
+
+//product
 var courseApi = 'http://localhost:3000/courses'
 fetch(courseApi)
     .then(function (response) {
@@ -51,3 +108,6 @@ fetch(courseApi)
     .then(function (course) {
         console.log(course)
     })
+
+        
+

@@ -33,6 +33,10 @@ body {
   cursor: pointer;
 }
 
+.no-gutter-default {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 /* Animation */
 @keyframes fadeIn {
   from {
@@ -54,4 +58,5 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   animation: fadeIn linear 0.2s;
   display: none;
+  z-index: 0;
 }

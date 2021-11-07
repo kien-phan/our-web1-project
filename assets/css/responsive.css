@@ -283,4 +283,44 @@
   .carousel-inner-2 .carousel-item-prev {
     transform: translateX(-50%);
   }
+
+  /* footer */
+  .js-footer-list {
+    display: none;
+  }
+  .footer__content .row div {
+    padding: 0 15px;
+    margin: 0 !important;
+  }
+  .footer__content-list {
+    max-width: none;
+  }
+  .footer__payment {
+    padding: 0 0 15px 0 !important;
+  }
+  .footer__content-item {
+    padding-bottom: 10px;
+  }
+  .footer__content-item-icon {
+    padding-top: 4px;
+  }
+  .footer__payment-wrap {
+    width: 270px;
+  }
+  .footer__content-heading {
+    position: relative;
+  }
+  .footer__content-heading i {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 1.2rem;
+    transform-origin: center;
+    transition: all ease 0.5s;
+    transform: rotate(0);
+  }
+  .footer__content-heading .footer__arrow-change {
+    transform: rotate(180deg);
+  }
 }

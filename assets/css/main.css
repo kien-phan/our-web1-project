@@ -11,8 +11,8 @@ a {
 
 .return-top {
   position: fixed;
-  bottom: 35px;
-  right: 20px;
+  bottom: 10px;
+  right: 25px;
   display: block;
   width: 50px;
   height: 50px;
@@ -1485,8 +1485,9 @@ a {
 /* footer */
 .footer {
   padding: 50px 0 0 0;
-  background-color: var(--black-color);
   color: #c4c4c4;
+  background: url("https://bizweb.dktcdn.net/100/434/558/themes/831317/assets/backg-footer.jpg?1630049131390")
+    top center / cover no-repeat;
 }
 
 .footer__content {
@@ -1543,6 +1544,10 @@ a {
   padding-bottom: 10px;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.footer__content-heading i {
+  display: none;
 }
 
 /* social */

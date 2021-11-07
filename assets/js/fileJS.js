@@ -75,29 +75,40 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+// footer
+var footerLists = document.querySelectorAll('.footer__content-heading');
+var footerArrows = document.querySelectorAll('.footer__content-heading i')
+    for (list of footerLists)
+    {
+        list.onclick = function () {
+            this.nextElementSibling.classList.toggle('js-footer-list')
+            this.childNodes[0].classList.toggle('footer__arrow-change')
+        }    
+    }
+
 
     // like
-    var productLikeLinks = document.querySelectorAll(".product-action__link")
-    var quantityOfLike = document.querySelector('.header__user-count');
-    var likeNumber = parseInt(quantityOfLike.innerText);
-    for (var link of productLikeLinks) {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            var icon = this.querySelector('.product-action__icon')
-            if (icon.classList.contains('ti-heart')) {
-                icon.classList.remove('ti-heart')
-                icon.classList.add('fas', 'fa-heart')
-                likeNumber += 1
-                quantityOfLike.innerText = likeNumber
-            }
-            else {
-                icon.classList.add('ti-heart')
-                icon.classList.remove('fas', 'fa-heart')
-                likeNumber -= 1
-                quantityOfLike.innerText = likeNumber
-            }
-        })
-    }
+var productLikeLinks = document.querySelectorAll(".product-action__link")
+var quantityOfLike = document.querySelector('.header__user-count');
+var likeNumber = parseInt(quantityOfLike.innerText);
+for (var link of productLikeLinks) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var icon = this.querySelector('.product-action__icon')
+        if (icon.classList.contains('ti-heart')) {
+            icon.classList.remove('ti-heart')
+            icon.classList.add('fas', 'fa-heart')
+            likeNumber += 1
+            quantityOfLike.innerText = likeNumber
+        }
+        else {
+            icon.classList.add('ti-heart')
+            icon.classList.remove('fas', 'fa-heart')
+            likeNumber -= 1
+            quantityOfLike.innerText = likeNumber
+        }
+    })
+}
 
 //product
 var courseApi = 'http://localhost:3000/courses'

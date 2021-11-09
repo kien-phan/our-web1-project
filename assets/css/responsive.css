@@ -152,6 +152,7 @@
   /* section-6 */
   .section-6__block-service {
     float: none;
+    text-align: center;
   }
   .section-6__left {
     padding: 30px 0 0 0;
@@ -457,8 +458,29 @@
   }
 
   /* section-6 */
+  .our-service__list {
+    text-align: left;
+  }
+  .section-6__left {
+    text-align: center;
+  }
+  .section-6__block-service {
+    float: none;
+    text-align: center;
+  }
   .our-service__title h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+  }
+
+  .section-6__img {
+    max-width: 100%;
+  }
+  .our-service__item {
+    padding: 12px 0;
+  }
+  .our-service__item-info-heading {
+    margin: 10px 0;
+    font-size: 1.4rem;
   }
   /* footer */
   .js-footer-list {
@@ -529,5 +551,32 @@
   }
   .modal-label {
     padding-bottom: 6px;
+  }
+}
+
+/* nhìn con ip5 ngứa mắt */
+@media (max-width: 20em) {
+  .header__search {
+    width: 44%;
+  }
+  .header__search-btn {
+    display: none;
+  }
+  .header__search-input::placeholder {
+    font-size: 1.1rem;
+  }
+  .category__outside-icon {
+    margin-left: 10px;
+  }
+  .category__inside-list {
+    padding: 8px 10px;
+  }
+  /* end header */
+  .section-5__selection-item {
+    padding: 0 12px;
+  }
+  /* footer */
+  .footer__content .row div {
+    padding: 0 10px;
   }
 }

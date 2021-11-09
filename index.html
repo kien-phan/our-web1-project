@@ -7,12 +7,8 @@
     <title>Stationary</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> <!-- bootstrap css -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <!-- jquery -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- bootstrap js -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script> <!-- touch swipe -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -23,6 +19,11 @@
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> <!-- font awesome-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <!-- jquery -->
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script> <!-- touch swipe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="app">
@@ -336,6 +337,12 @@
                             </a>
                         </div>
                     </div>
+                    <div class="section-2__arrow-prev">
+                        <span><i class="ti-angle-left"></i></span>
+                    </div>
+                    <div class="section-2__arrow-next">
+                        <span><i class="ti-angle-right"></i></span>
+                    </div>
                 </div> 
             </div>
             <div class="section-3">
@@ -350,395 +357,356 @@
                     </div>
                     
                     <div class="awSlider" >
-                        <div class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" style="cursor: grab;">
-                                <div class="carousel-item active">
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở viết kẻ
-                                                    ngang nhiều hình siêu ngộ nghĩnh</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">12.000₫</span>
-                                                    <span class="product-item__price-old">41.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp
-                                                    đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">15.000₫</span>
-                                                    <span class="product-item__price-old">25.0000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân
-                                                    tiện dụng văn phòng phẩm</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">28.000₫</span>
-                                                    <span class="product-item__price-old">69.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ
-                                                    Túi Dễ Thương</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">29.000₫</span>
-                                                    <span class="product-item__price-old">49.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở viết kẻ
-                                                    ngang nhiều hình siêu ngộ nghĩnh</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">12.000₫</span>
-                                                    <span class="product-item__price-old">41.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp
-                                                    đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">15.000₫</span>
-                                                    <span class="product-item__price-old">25.0000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân
-                                                    tiện dụng văn phòng phẩm</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">28.000₫</span>
-                                                    <span class="product-item__price-old">69.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                        <div class="product-action">
-                                            <a href="" class="product-action__link">
-                                                <i class="ti-heart product-action__icon"></i>
-                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                            </a>
-                                        </div>
-                                        <a href="" class="product-item__link">
-                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
-                                                class="product-item__img">
-                                        </a>
-                                        <div class="product-item__info">
-                                            <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ
-                                                Túi Dễ Thương</a>
-                                            <div class="product-item__price">
-                                                <span class="product-item__price-current">29.000₫</span>
-                                                <span class="product-item__price-old">49.000₫</span>
-                                            </div>
-                                        </div>
-                                        <a href="" class="add-to-cart__link">
-                                            <button class="add-to-cart__btn">
-                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                            </button>
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
                                         </a>
                                     </div>
-                                    </div> 
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở viết kẻ
-                                                    ngang nhiều hình siêu ngộ nghĩnh</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">12.000₫</span>
-                                                    <span class="product-item__price-old">41.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở viết kẻ
+                                            ngang nhiều hình siêu ngộ nghĩnh</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">12.000₫</span>
+                                            <span class="product-item__price-old">41.000₫</span>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp
-                                                    đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">15.000₫</span>
-                                                    <span class="product-item__price-old">25.0000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân
-                                                    tiện dụng văn phòng phẩm</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">28.000₫</span>
-                                                    <span class="product-item__price-old">69.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col l-3">
-                                        <div class="product-item">
-                                            <div class="product-action">
-                                                <a href="" class="product-action__link">
-                                                    <i class="ti-heart product-action__icon"></i>
-                                                    <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                </a>
-                                            </div>
-                                            <a href="" class="product-item__link">
-                                                <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
-                                                    class="product-item__img">
-                                            </a>
-                                            <div class="product-item__info">
-                                                <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ
-                                                    Túi Dễ Thương</a>
-                                                <div class="product-item__price">
-                                                    <span class="product-item__price-current">29.000₫</span>
-                                                    <span class="product-item__price-old">49.000₫</span>
-                                                </div>
-                                            </div>
-                                            <a href="" class="add-to-cart__link">
-                                                <button class="add-to-cart__btn">
-                                                    <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                    <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href=".carousel" data-slide="prev">
-                                <div class="prev-btn">
-                                    <i class="ti-angle-left"></i>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp
+                                            đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">15.000₫</span>
+                                            <span class="product-item__price-old">25.0000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
                                 </div>
-                            </a>
-                            <a class="carousel-control-next" href=".carousel" data-slide="next">
-                                <div class="next-btn">
-                                    <i class="ti-angle-right"></i>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân
+                                            tiện dụng văn phòng phẩm</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">28.000₫</span>
+                                            <span class="product-item__price-old">69.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ
+                                            Túi Dễ Thương</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">29.000₫</span>
+                                            <span class="product-item__price-old">49.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở viết kẻ
+                                            ngang nhiều hình siêu ngộ nghĩnh</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">12.000₫</span>
+                                            <span class="product-item__price-old">41.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp
+                                            đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">15.000₫</span>
+                                            <span class="product-item__price-old">25.0000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân
+                                            tiện dụng văn phòng phẩm</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">28.000₫</span>
+                                            <span class="product-item__price-old">69.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ
+                                            Túi Dễ Thương</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">29.000₫</span>
+                                            <span class="product-item__price-old">49.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở viết kẻ
+                                            ngang nhiều hình siêu ngộ nghĩnh</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">12.000₫</span>
+                                            <span class="product-item__price-old">41.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp
+                                            đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">15.000₫</span>
+                                            <span class="product-item__price-old">25.0000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân
+                                            tiện dụng văn phòng phẩm</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">28.000₫</span>
+                                            <span class="product-item__price-old">69.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="product-item">
+                                    <div class="product-action">
+                                        <a href="" class="product-action__link">
+                                            <i class="ti-heart product-action__icon"></i>
+                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                        </a>
+                                    </div>
+                                    <a href="" class="product-item__link">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
+                                            class="product-item__img">
+                                    </a>
+                                    <div class="product-item__info">
+                                        <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ
+                                            Túi Dễ Thương</a>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">29.000₫</span>
+                                            <span class="product-item__price-old">49.000₫</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="add-to-cart__link">
+                                        <button class="add-to-cart__btn">
+                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev">
+                            <div class="prev-btn">
+                                <i class="ti-angle-left"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-control-next">
+                            <div class="next-btn">
+                                <i class="ti-angle-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <script>
-                    $(".carousel").swipe({
-
-                            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-
-                                if (direction == 'left') $(this).carousel('next');
-                                if (direction == 'right') $(this).carousel('prev');
-
-                            },
-                            allowPageScroll: "vertical"
-
-                        });
-                    $('.carousel').on('touchstart', function (event) {
-                            const xClick = event.originalEvent.touches[0].pageX;
-                            $(this).one('touchmove', function (event) {
-                                const xMove = event.originalEvent.touches[0].pageX;
-                                const sensitivityInPx = 5;
-
-                                if (Math.floor(xClick - xMove) > sensitivityInPx) {
-                                    $(this).carousel('next');
-                                }
-                                else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
-                                    $(this).carousel('prev');
-                                }
-                            });
-                            $(this).on('touchend', function () {
-                                $(this).off('touchmove');
-                            });
-                        });
-                </script>
             </div>
 
             <div class="section-4">
@@ -751,192 +719,121 @@
                             </a>
                         </h2>
                         <div class="grid wide">
-                            <div class="carousel slide carousel-2" data-ride="carousel">
-                                <div class="carousel-inner carousel-inner-2" style="cursor: grab;">
-                                    <div class="carousel-item active">
-                                        <div class="col l-4 m-4 c-6 no-gutter-default">
-                                                <div class="product-item">
-                                                    <div class="product-action">
-                                                        <a href="" class="product-action__link">
-                                                            <i class="ti-heart product-action__icon"></i>
-                                                            <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                        </a>
-                                                    </div>
-                                                    <a href="" class="product-item__link">
-                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
-                                                            class="product-item__img">
-                                                    </a>
-                                                    <div class="product-item__info product-item__info-action">
-                                                        <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở
-                                                            viết kẻ
-                                                            ngang nhiều hình siêu ngộ nghĩnh</a>
-                                                        <div class="product-item__price">
-                                                            <span class="product-item__price-current" style="font-size: 24px;">12.000₫</span>
-                                                            <span class="product-item__price-old" style="font-size: 14px;">41.000₫</span>
-                                                        </div>
-                                                    </div>
-                                                    <a href="" class="add-to-cart__link add-to-cart__action">
-                                                        <button class="add-to-cart__btn">
-                                                            <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                            <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                        </button>
-                                                    </a>
-                                                </div>
+                            <div class="carousel-2" >
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col l-4 m-4 c-6 no-gutter-default">
-                                            <div class="product-item">
-                                                <div class="product-action">
-                                                    <a href="" class="product-action__link">
-                                                        <i class="ti-heart product-action__icon"></i>
-                                                        <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                    </a>
-                                                </div>
-                                                <a href="" class="product-item__link">
-                                                    <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
-                                                        class="product-item__img">
-                                                </a>
-                                                <div class="product-item__info product-item__info-action">
-                                                    <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
-                                                    <div class="product-item__price">
-                                                        <span class="product-item__price-current" style="font-size: 24px;">15.000₫</span>
-                                                        <span class="product-item__price-old" style="font-size: 14px;">25.000₫</span>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="add-to-cart__link add-to-cart__action">
-                                                    <button class="add-to-cart__btn">
-                                                        <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                        <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                    </button>
-                                                </a>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở
+                                                viết kẻ
+                                                ngang nhiều hình siêu ngộ nghĩnh</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">12.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">41.000₫</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col l-4 m-4 c-6 no-gutter-default">
-                                            <div class="product-item">
-                                                <div class="product-action">
-                                                    <a href="" class="product-action__link">
-                                                        <i class="ti-heart product-action__icon"></i>
-                                                        <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                    </a>
-                                                </div>
-                                                <a href="" class="product-item__link">
-                                                    <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
-                                                        class="product-item__img">
-                                                </a>
-                                                <div class="product-item__info product-item__info-action">
-                                                    <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân tiện dụng văn phòng phẩm</a>
-                                                    <div class="product-item__price">
-                                                        <span class="product-item__price-current" style="font-size: 24px;">28.000₫</span>
-                                                        <span class="product-item__price-old" style="font-size: 14px;">69.000₫</span>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="add-to-cart__link add-to-cart__action">
-                                                    <button class="add-to-cart__btn">
-                                                        <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                        <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="col l-4 m-4 c-6 no-gutter-default">
-                                            <div class="product-item">
-                                                <div class="product-action">
-                                                    <a href="" class="product-action__link">
-                                                        <i class="ti-heart product-action__icon"></i>
-                                                        <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
-                                                    </a>
-                                                </div>
-                                                <a href="" class="product-item__link">
-                                                    <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
-                                                        class="product-item__img">
-                                                </a>
-                                                <div class="product-item__info product-item__info-action">
-                                                    <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ Túi Dễ Thương</a>
-                                                    <div class="product-item__price">
-                                                        <span class="product-item__price-current" style="font-size: 24px;">29.000₫</span>
-                                                        <span class="product-item__price-old" style="font-size: 14px;">49.000₫</span>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="add-to-cart__link add-to-cart__action">
-                                                    <button class="add-to-cart__btn">
-                                                        <i class="add-to-cart__icon ti-shopping-cart"></i>
-                                                        <span class="add-to-cart__text">Thêm vào giỏ</span>
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev-2" href=".carousel-2" data-slide="prev">
-                                    <div class="prev-btn-2">
-                                        <span></span>
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">15.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">25.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="carousel-control-next-2" href=".carousel-2" data-slide="next">
-                                    <div class="next-btn-2">
-                                        <span></span>
+                                </div>
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân tiện dụng văn phòng phẩm</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">28.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">69.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ Túi Dễ Thương</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">29.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">49.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <script>
-                    $('.carousel-2').carousel({
-                            interval: false,
-                        });
-
-                    $('.carousel-2').swipe({
-
-                        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-
-                            if (direction == 'left') $(this).carousel('next');
-                            if (direction == 'right') $(this).carousel('prev');
-
-                        },
-                        allowPageScroll: "vertical"
-
-                    });
-                    $('.carousel-2').on('touchstart', function (event) {
-                        const xClick = event.originalEvent.touches[0].pageX;
-                        $(this).one('touchmove', function (event) {
-                            const xMove = event.originalEvent.touches[0].pageX;
-                            const sensitivityInPx = 5;
-
-                            if (Math.floor(xClick - xMove) > sensitivityInPx) {
-                                $(this).carousel('next');
-                            }
-                            else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
-                                $(this).carousel('prev');
-                            }
-                        });
-                        $(this).on('touchend', function () {
-                            $(this).off('touchmove');
-                        });
-                    });
-
-                    $('.carousel-2 .carousel-item').each(function () {
-                            var next = $(this).next();
-                            if (!next.length) {
-                                next = $(this).siblings(':first');
-                            }
-                            next.children(':first-child').clone().appendTo($(this));
-
-                            for (var i = 0; i < 2; i++) {
-                                next = next.next();
-                                if (!next.length) {
-                                    next = $(this).siblings(':first');
-                                }
-
-                                next.children(':first-child').clone().appendTo($(this));
-                            }
-                        });
-                </script>
             </div>
 
             <div class="section-5">
@@ -962,7 +859,7 @@
                             <div class="section-5__slider">
                                 <div class="section-5__slides">
                                     <div id="tab-1__slide-1" class="row">
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -989,7 +886,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1018,7 +915,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1047,7 +944,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1076,7 +973,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1105,7 +1002,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1134,7 +1031,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1163,7 +1060,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1194,7 +1091,7 @@
                                         </div>
                                     </div>
                                     <div id="tab-1__slide-2" class="row">
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1223,7 +1120,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1280,7 +1177,7 @@
                             <div class="section-5__slider">
                                 <div class="section-5__slides">
                                     <div id="tab-2__slide-1" class="row">
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1309,7 +1206,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1338,7 +1235,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1367,7 +1264,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1396,7 +1293,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1425,7 +1322,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1454,7 +1351,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1483,7 +1380,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1514,7 +1411,7 @@
                                         </div>
                                     </div>
                                     <div id="tab-2__slide-2" class="row">
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1543,7 +1440,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col l-3">
+                                        <div class="col l-2 ">
                                             <div class="product-item">
                                                 <div class="product-action">
                                                     <a href="" class="product-action__link">
@@ -1761,7 +1658,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-3 m-4 c-12 no-gutter-default">
+                    <div class="col l-2  m-4 c-12 no-gutter-default">
                         <h3 class="footer__content-heading"><i class="ti-angle-down"></i>THEO DÕI CHÚNG TÔI</h3>
                         <ul class="footer__social-list js-footer-list">
                             <li class="footer__social-item">

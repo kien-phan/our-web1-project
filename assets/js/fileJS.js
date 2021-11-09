@@ -59,7 +59,7 @@ var x = setInterval(function() {
             </li>
             <li class="timer__item">
                 <div class="timer__item-heading">Phút</div>
-                <div class="timr__item-numbers">${minutes}</div>
+                <div class="timer__item-numbers">${minutes}</div>
             </li>
             <li class="timer__item">
                 <div class="timer__item-heading">Giây</div>
@@ -110,6 +110,104 @@ for (var link of productLikeLinks) {
     })
 }
 
+//section 2
+$('.section-2__category').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+    responsive: [
+    {
+        breakpoint: 9999,
+        settings: 'unslick'    
+    },
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false
+      }
+    }
+  ],
+    prevArrow: '.section-2__arrow-prev',
+    nextArrow: '.section-2__arrow-next'
+});
+
+/* section 3 */
+$('.carousel').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: true,
+  autoplaySpeed: 4000,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    }
+  ],
+    prevArrow: '.carousel-control-prev',
+    nextArrow: '.carousel-control-next'
+});
+
+/* section 4 */
+$('.carousel-2').slick({
+  dots: true,
+  infinite: false,
+  speed: 400,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+    autoplay: false,
+  arrows: false,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    }
+  ]
+});
 //product
 var courseApi = 'http://localhost:3000/courses'
 fetch(courseApi)

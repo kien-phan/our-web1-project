@@ -178,37 +178,6 @@ $('.carousel').slick({
     nextArrow: '.carousel-control-next'
 });
 
-/* section 4 */
-$('.carousel-2').slick({
-  dots: true,
-  infinite: false,
-  speed: 400,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-    autoplay: false,
-  arrows: false,
-    responsive: [
-    {
-      breakpoint: 1023,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 739,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true
-      }
-    }
-  ]
-});
-
 /* section-5 */
 $('.carousel-3').slick({
   rows: 2,
@@ -264,6 +233,39 @@ $('.carousel-4').slick({
     }
   ]
 });
+
+/* section 4 */
+$('.carousel-2').slick({
+  dots: true,
+  infinite: false,
+  speed: 400,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+    autoplay: false,
+  arrows: false,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    }
+  ]
+});
+
+
 //product
 // var courseApi = 'http://localhost:3000/courses'
 // fetch(courseApi)

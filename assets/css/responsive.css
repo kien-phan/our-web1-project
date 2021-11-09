@@ -1,4 +1,4 @@
-/* Mobile & Tablet */
+/* mobile & tablet */
 @media (max-width: 63.9375em) {
   .header__user-item--log-in:hover .header__user-account {
     display: none;
@@ -12,7 +12,7 @@
   /* header end*/
 
   .product-action {
-    display: block;
+    display: none;
   }
 
   /* section 2 */
@@ -77,7 +77,7 @@
   }
 }
 
-/* Tablet */
+/* tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   /* header */
   .header-wrap {
@@ -147,6 +147,27 @@
 
   .product-item__price-current {
     font-size: 2rem !important;
+  }
+
+  /* section-6 */
+  .section-6__block-service {
+    float: none;
+  }
+  .section-6__left {
+    padding: 30px 0 0 0;
+  }
+  .our-service__title h1 {
+    font-size: 2.5rem;
+  }
+  .section-6__img {
+    max-width: 340px;
+  }
+  .our-service__item {
+    padding: 12px 0;
+  }
+  .our-service__item-info-heading {
+    margin: 10px 0;
+    font-size: 1.4rem;
   }
 
   /* footer */
@@ -272,7 +293,7 @@
   .category__inside-list {
     position: relative;
     margin: 0;
-    padding: 8px 32px;
+    padding: 8px 25px;
     width: 70%;
   }
 
@@ -294,7 +315,7 @@
   }
 
   .category__inside-item {
-    padding-left: 32px;
+    padding: 9px 0 0 16px;
     display: none;
   }
 
@@ -399,7 +420,7 @@
   .add-to-cart__btn {
     max-width: 100%;
     font-size: 1.2rem;
-    height: 30px;
+    height: 25px;
     margin-top: 8px;
   }
   .add-to-cart__action {
@@ -418,18 +439,21 @@
   }
   .section-4__background {
     margin-top: -220px;
-    padding-top: 180px;
+    padding-top: 190px;
     padding-bottom: 0;
     margin-bottom: 0;
     background: url("../img/section_4_bg.jpg") top center / cover no-repeat;
   }
 
   .product-item__price-current {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
   }
   /* section - 5 */
   .section-5__selection-item {
     margin: 0;
+  }
+  .section-5 .product-item {
+    padding: 10px 8px;
   }
 
   /* section-6 */
@@ -477,5 +501,33 @@
   }
   .footer__content-heading .footer__arrow-change {
     transform: rotate(180deg);
+  }
+}
+
+@media (max-height: 47.875em) {
+  /* modal */
+  .modal-body {
+    padding: 10px 16px 18px;
+  }
+  .modal__footer-link {
+    width: 110px;
+    margin-top: 20px;
+  }
+  .modal__btn {
+    width: 42%;
+    margin: 0 8px;
+    height: 80%;
+  }
+  .modal-header__btn {
+    height: 35px;
+  }
+  .modal__forget-pass {
+    padding-bottom: 10px;
+  }
+  .log-in-note {
+    width: 100%;
+  }
+  .modal-label {
+    padding-bottom: 6px;
   }
 }

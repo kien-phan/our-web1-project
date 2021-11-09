@@ -59,7 +59,7 @@ a {
   background-color: var(--white-color);
   width: 682px;
   max-width: calc(100% - 32px);
-  border-radius: 2px;
+  border-radius: 8px;
   overflow: hidden;
   animation: modalFadeIn ease 0.5s;
 }
@@ -446,7 +446,7 @@ a {
 .header__user-account::after {
   content: "";
   position: absolute;
-  top: -27px;
+  top: -22px;
   right: 0;
   width: 50px;
   height: 44px;
@@ -975,7 +975,7 @@ a {
   border: 2px solid #dc2028;
   border-radius: 15px;
   background-color: var(--white-color);
-  z-index: 1;
+  z-index: 0;
 }
 
 .next-btn,
@@ -1197,11 +1197,11 @@ a {
 
   list-style-type: none;
 }
-.slick-dots li {
+.carousel-2 .slick-dots li {
   margin: 0 16px;
 }
 
-.slick-dots button {
+.carousel-2 .slick-dots button {
   cursor: pointer;
   display: block;
   width: 1rem;
@@ -1215,7 +1215,7 @@ a {
   text-indent: -9999px;
 }
 
-.slick-dots li.slick-active button {
+.carousel-2 .slick-dots li.slick-active button {
   background-color: red;
 }
 
@@ -1247,6 +1247,10 @@ a {
 /* section - 5 */
 .product-container-section-5 {
   /* min-height: 952px; */
+}
+
+.section-5 .product-item {
+  padding: 10px 6px;
 }
 
 /* section-5 selection */
@@ -1291,92 +1295,48 @@ a {
   color: var(--white-color);
 }
 /* section-5 product */
-.section-5_product-wrap {
-  margin: 50px 0 85px;
+.carousel-3,
+.carousel-4 {
+  margin: 30px 0 35px;
 }
 
-.section-5__slider {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  text-align: center;
+.section-5 img {
 }
 
-.section-5__slides {
+.carousel-3 .slick-dots,
+.carousel-4 .slick-dots {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-scrolling: touch;
-  -o-overflow-scrolling: touch;
-  -webkit-scroll-snap-points-x: repeat(1200px);
-  -ms-scroll-snap-points-x: repeat(1200px);
-  -o-scroll-snap-points-x: repeat(1200px);
-  -webkit-scroll-snap-type: x mandatory;
-  -ms-scroll-snap-type: x mandatory;
-  -o-scroll-snap-type: x mandatory;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 40px;
+  justify-content: center;
+  margin: 0;
+  padding: 30px 0 0;
+
+  list-style-type: none;
+}
+.carousel-3 .slick-dots li,
+.carousel-4 .slick-dots li {
+  margin: 0 16px;
 }
 
-.section-5__slides::-webkit-scrollbar {
-  display: none;
-}
+.carousel-3 .slick-dots button,
+.carousel-4 .slick-dots button {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
 
-.section-5__slides > div {
-  flex-shrink: 0;
-  scroll-snap-align: start;
-  width: 1200px;
-  height: 760px;
-  transform-origin: center center;
-  transition: transform 0.5s;
-}
+  border: none;
+  border-radius: 3px;
+  background-color: var(--white-color);
 
-.section-5__slides img {
-  max-width: 289px;
-}
-
-#tab-1__slide-1,
-#tab-2__slide-1 {
-  margin-right: 20px;
-}
-
-.slide-link-wrap {
-  position: relative;
-  bottom: 0;
-  left: 48%;
-  transform: translateX(-50%);
-}
-
-.slide-link-1-tab-2,
-.slide-link-2-tab-2,
-.slide-link-1,
-.slide-link-2 {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 10px 16px;
-  background-color: #ccc;
-  border: 1 px solid rgb(0, 0, 0, 0.1);
   font-size: 1.4rem;
-  line-height: 20px;
+}
+
+.carousel-3 .slick-dots li.slick-active button,
+.carousel-4 .slick-dots li.slick-active button {
+  background-color: var(--primary-color);
   color: var(--white-color);
-  text-align: center;
 }
-
-.slide-link-1-tab-2:hover,
-.slide-link-2-tab-2:hover,
-.slide-link-1:hover,
-.slide-link-2:hover {
-  background-color: var(--primary-color);
-}
-
-.slide-link-active {
-  background-color: var(--primary-color);
-}
-
 /* tab-3,4,5 */
 .section-5__tab-3 {
   margin-top: 32px;
@@ -1396,11 +1356,18 @@ a {
   font-weight: 400;
 }
 
+.section-5__tab-1,
 .section-5__tab-2,
 .section-5__tab-3,
 .section-5__tab-4,
 .section-5__tab-5 {
-  display: none;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.section-5__tab-current {
+  height: auto;
+  opacity: 1;
 }
 /* section-6 */
 .our-service {
@@ -1549,6 +1516,7 @@ a {
 
 /* payment */
 .footer__payment-wrap {
+  min-width: 230px;
   background-color: var(--white-color);
   border-radius: 30px;
   display: flex;

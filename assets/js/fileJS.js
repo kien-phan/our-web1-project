@@ -208,6 +208,62 @@ $('.carousel-2').slick({
     }
   ]
 });
+
+/* section-5 */
+$('.carousel-3').slick({
+  rows: 2,
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: false,
+  arrows: false,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false
+      }
+    }
+  ]
+});
+$('.carousel-4').slick({
+  rows: 2,
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: false,
+  arrows: false,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false
+      }
+    }
+  ]
+});
 //product
 var courseApi = 'http://localhost:3000/courses'
 fetch(courseApi)

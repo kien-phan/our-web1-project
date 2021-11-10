@@ -356,9 +356,6 @@ a {
   color: var(--white-color);
 }
 
-.header__hotline-img {
-}
-
 .header__hotline-number {
   flex: 1;
   font-size: 1.8rem;
@@ -787,8 +784,6 @@ a {
   white-space: nowrap;
 }
 
-.header__navbar-slogan span {
-}
 /* header__navbar-menu-wrap */
 .header__navbar-menu-wrap {
   width: 35%;
@@ -825,9 +820,9 @@ a {
 }
 
 /* body */
-.app__container {
-  /* margin-top: var(--header-navbar-height); */
-}
+/* .app__container {
+  margin-top: var(--header-navbar-height);
+} */
 /* section-1 */
 .wallpaper__slider {
   padding-top: 41%;
@@ -1153,8 +1148,6 @@ a {
 }
 
 /* section-4 */
-.section-4 {
-}
 
 .section-4__background {
   background: url("//bizweb.dktcdn.net/100/434/558/themes/831317/assets/bg_sp_noibat.jpg?1630049131390")
@@ -1245,9 +1238,9 @@ a {
 }
 
 /* section - 5 */
-.product-container-section-5 {
-  /* min-height: 952px; */
-}
+/* .product-container-section-5 {
+  min-height: 952px;
+} */
 
 .section-5 .product-item {
   padding: 10px 6px;
@@ -1298,9 +1291,6 @@ a {
 .carousel-3,
 .carousel-4 {
   margin: 30px 0 35px;
-}
-
-.section-5 img {
 }
 
 .carousel-3 .slick-dots,

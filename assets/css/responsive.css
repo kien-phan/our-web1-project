@@ -90,8 +90,7 @@
   .header__logo-img {
     width: 160px;
   }
-  .header__search {
-  }
+
   .header__search-input {
     padding: 0 20px 0;
   }
@@ -185,9 +184,6 @@
   }
   .header-wrap {
     height: 52px;
-  }
-
-  .header__navbar-wrap {
   }
 
   .header__logo {
@@ -355,7 +351,6 @@
   /* slide-in-cart */
   .slide-in-cart {
     width: 100vw;
-    z-index: 69;
   }
 
   /* modal login regis */

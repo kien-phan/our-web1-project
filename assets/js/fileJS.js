@@ -3,10 +3,12 @@ var cate = document.querySelector('.category')
 var cateInside = document.querySelector('.category__inside') 
 var overlay = document.querySelector('.overlay-cate')   
 cate.addEventListener('click', function () {
-    overlay.style.display = 'block';
+  overlay.style.display = 'block'
+  cateInside.classList.toggle('category__inside--open')
 })
 overlay.addEventListener('click', function () {
-    overlay.style.display = 'none'
+  overlay.style.display = 'none'
+  cateInside.classList.toggle('category__inside--open')
 })
 
 //cate show list

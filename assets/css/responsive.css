@@ -269,9 +269,14 @@
     transition: all ease 0.5s;
   }
 
+  .category__inside--open {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+
   .category:hover .category__inside {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: unset;
+    transform: none;
   }
 
   .category__inside::-webkit-scrollbar {

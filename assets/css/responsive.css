@@ -266,6 +266,15 @@
     border-radius: 0;
     max-height: 100vh;
     overflow-y: auto;
+    transform-origin: left center;
+    opacity: 0;
+    transform: translateX(-289.8px);
+    z-index: 69;
+    transition: all ease 0.5s;
+  }
+
+  .category__inside::-webkit-scrollbar {
+    display: none;
   }
 
   .category__inside-mobile-head {
@@ -291,6 +300,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
+    margin-bottom: 30px;
   }
 
   .category__inside-list {
@@ -330,14 +340,6 @@
     display: block;
   }
 
-  .category__inside {
-    transform-origin: left center;
-    opacity: 0;
-    transform: translateX(-289.8px);
-    z-index: 69;
-    transition: all ease 0.5s;
-  }
-
   .overlay-cate {
     position: fixed;
     top: 0;
@@ -353,7 +355,7 @@
   /* slide-in-cart */
   .slide-in-cart {
     width: 100vw;
-    z-index: 10;
+    z-index: 69;
   }
 
   /* modal login regis */

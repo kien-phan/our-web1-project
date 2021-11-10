@@ -4,7 +4,7 @@ var cateInside = document.querySelector('.category__inside')
 var overlay = document.querySelector('.overlay-cate')   
 cate.addEventListener('click', function () {
   overlay.style.display = 'block'
-  cateInside.classList.toggle('category__inside--open')
+  cateInside.classList.add('category__inside--open')
 })
 overlay.addEventListener('click', function () {
   overlay.style.display = 'none'

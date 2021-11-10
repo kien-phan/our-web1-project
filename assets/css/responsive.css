@@ -269,6 +269,11 @@
     transition: all ease 0.5s;
   }
 
+  .category:hover .category__inside {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
   .category__inside::-webkit-scrollbar {
     display: none;
   }

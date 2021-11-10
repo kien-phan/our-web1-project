@@ -264,6 +264,8 @@
     bottom: 0;
     z-index: 69;
     border-radius: 0;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
   .category__inside-mobile-head {
@@ -345,7 +347,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     animation: fadeIn linear 0.2s;
     display: none;
-    z-index: 0;
+    z-index: 68;
   }
 
   /* slide-in-cart */

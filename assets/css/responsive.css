@@ -9,6 +9,11 @@
     margin-left: 27%;
   }
 
+  /* search */
+  .header__search-result-found {
+    width: 150%;
+  }
+
   /* header end*/
 
   .product-action {
@@ -206,6 +211,11 @@
 
   .header__search-btn {
     top: -3px;
+    right: -5px;
+  }
+
+  .header__search-result {
+    top: 36px;
   }
 
   .header__hotline {
@@ -272,11 +282,6 @@
   .category__inside--open {
     opacity: 1 !important;
     transform: translateX(0) !important;
-  }
-
-  .category:hover .category__inside {
-    opacity: unset;
-    transform: none;
   }
 
   .category__inside::-webkit-scrollbar {

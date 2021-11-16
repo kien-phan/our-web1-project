@@ -1,3 +1,243 @@
+//product
+var productApi = 'http://localhost:3000/products'
+
+// function start() {
+//   getProduct(function (products) {
+//     renderProducts(products)
+//   })
+// }
+
+function start() {
+  getProduct(renderProducts)  //truyen thang 1 function
+}
+start();
+//function
+function getProduct(callBack) {
+  fetch(productApi)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(callBack)
+}
+
+function renderProducts(products) {
+  var listProductsBlock3 = document.querySelector('.carousel-3')
+  var listProductsBlock4 = document.querySelector('.carousel-4')
+  var htmls3 = products.map(function (product) {
+    if (product.category == 'book')
+    {
+      return `
+        <div class="product-item">
+          <div class="product-action">
+              <a href="" class="product-action__link">
+                  <i class="ti-heart product-action__icon"></i>
+              </a>
+          </div>
+          <a href="" class="product-item__link">
+            <img src="${product.img}" alt="" class="product-item__img">
+          </a>
+          <div class="product-item__info product-item__info-action">
+            <a href="" class="product-item__name" title="${product.pName}">${product.pName}</a>
+            <div class="product-item__price">
+              <span style="color: var(--primary-color);" class="product-item__price-current">${product.price}</span>
+              <span class="product-item__price-old">${product.oldPrice}</span>
+            </div>
+          </div>
+          <a href="" class="add-to-cart__link add-to-cart__action">
+            <button style="background-color: var(--primary-color);" class="add-to-cart__btn">
+              <i class="add-to-cart__icon ti-shopping-cart"></i>
+              <span class="add-to-cart__text">Thêm vào giỏ</span>
+            </button>
+          </a>
+        </div>
+      `
+    }
+  })
+  listProductsBlock3.innerHTML = htmls3.join('');
+  var htmls4 = products.map(function (product) {
+    if (product.category == 'notebook')
+    {
+      return `
+        <div class="product-item">
+          <div class="product-action">
+              <a href="" class="product-action__link">
+                  <i class="ti-heart product-action__icon"></i>
+              </a>
+          </div>
+          <a href="" class="product-item__link">
+            <img src="${product.img}" alt="" class="product-item__img">
+          </a>
+          <div class="product-item__info product-item__info-action">
+            <a href="" class="product-item__name" title="${product.pName}">${product.pName}</a>
+            <div class="product-item__price">
+              <span style="color: var(--primary-color);" class="product-item__price-current">${product.price}</span>
+              <span class="product-item__price-old">${product.oldPrice}</span>
+            </div>
+          </div>
+          <a href="" class="add-to-cart__link add-to-cart__action">
+            <button style="background-color: var(--primary-color);" class="add-to-cart__btn">
+              <i class="add-to-cart__icon ti-shopping-cart"></i>
+              <span class="add-to-cart__text">Thêm vào giỏ</span>
+            </button>
+          </a>
+        </div> 
+      `
+    }
+  })
+  listProductsBlock4.innerHTML = htmls4.join('');
+  /* section-5 */
+$('.carousel-3').slick({
+  rows: 2,
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: false,
+  arrows: false,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false
+      }
+    }
+  ]
+});
+
+$('.carousel-4').slick({
+  rows: 2,
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: false,
+  arrows: false,
+    responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false
+      }
+    }
+  ]
+}); 
+}
+
+function handleCreateForm() {
+  var createBtn = document.querySelector('#create')
+  createBtn.onclick = function () {
+    var pName = document.querySelector('input[name="pName"]').value;
+    var des = document.querySelector('input[name="des"]').value;
+    var formData = {
+      name: pName,
+      des: des
+    };
+    createProduct(formData, function () {
+      getProduct(renderProducts)
+    });
+  }
+}
+
+function createProduct(data, callBack) {
+  var options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'aplication/json'
+    },
+    body: JSON.stringify(data)
+  }
+  fetch(productApi, options)
+    .then(function (response) {
+      response.json();
+    })
+    .then(callBack);
+}
+
+//thêm vào nút xóa onclick = "handleDeleteProduct(${product.id})"
+//thêm class = "product-item-id-${product.id}"
+function handleDeleteProduct(id) {
+  var options = {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'aplication/json'
+    }
+  }
+  fetch(productApi + '/' + id, options)
+    .then(function (response) {
+      response.json();
+    })
+    .then(function () {
+      var productItem = document.querySelector('.product-item-' + id)
+      if (productItem) {
+        productItem.remove();
+      }
+    });
+}
+
+// hàm gửi ycau cập nhật
+function updateCourse(id, data){
+   fetch(coursesApi + '/' + id,{
+       method: 'PUT',
+       headers: { 'Content-Type': 'application/json'},
+       body: JSON.stringify(data),
+   })
+//    sau khi fetch. dc trả về chính dữ liệu dc gửi đi
+   .then(response => response.json()) // biến nó từ JSON -> JS
+   .then(function(){
+       getCoursesApi(renderHtml) // gọi lại hàm, render ra html lại từ đầu
+   })
+}
+
+function handleUpdateCourse(id){ /// nhận id on line 25
+    // nhận name, desc cũ theo class id để hiển thị ở input
+    var oldName = document.querySelector('.course-name-'+id)
+    var oldDesc = document.querySelector('.course-desc-'+id)
+
+    // lấy element node: name, desc để gán giá trị mới làm data gửi đi
+    var newName = document.querySelector('input[name="name"]')
+    var newDesc = document.querySelector('input[name="desc"]')
+    // gán giá trị mới để gửi đi
+    newName.value = oldName.innerText
+    newDesc.value = oldDesc.innerText
+
+    var createBtn = document.querySelector('#createBtn')
+    createBtn.style.display = 'none'
+
+    var updateBtn = document.querySelector('#updateBtn')
+    updateBtn.style.display = 'block'
+    updateBtn.onclick = function(){
+        var formData = {
+            name: newName.value,
+            desc: newDesc.value
+        }
+        // gọi hàm thực thi gửi yêu cầu, truyền id & data
+        updateCourse(id,formData)
+        //    reset input
+        document.querySelector('input[name="name"]').value = ""
+        document.querySelector('input[name="desc"]').value = ""
+    }
+}
+
 //cate header
 var cate = document.querySelector('.category')
 var cateInside = document.querySelector('.category__inside') 
@@ -180,62 +420,6 @@ $('.carousel').slick({
     nextArrow: '.carousel-control-next'
 });
 
-/* section-5 */
-$('.carousel-3').slick({
-  rows: 2,
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: false,
-  arrows: false,
-    responsive: [
-    {
-      breakpoint: 1023,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 739,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: false
-      }
-    }
-  ]
-});
-$('.carousel-4').slick({
-  rows: 2,
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: false,
-  arrows: false,
-    responsive: [
-    {
-      breakpoint: 1023,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 739,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: false
-      }
-    }
-  ]
-});
-
 /* section 4 */
 $('.carousel-2').slick({
   dots: true,
@@ -267,16 +451,62 @@ $('.carousel-2').slick({
   ]
 });
 
+//search
+function searchControl() {
+  var resultBlock = document.querySelector('.header__search-result')
+  var inputElement = document.querySelector('.header__search-input')
+  var bodyElement = document.getElementsByTagName('body')[0]
+  inputElement.onclick = function (e) {
+    e.stopPropagation();
+      resultBlock.classList.add('search-open')
+    }
+    bodyElement.onclick = function () {
+      resultBlock.classList.remove('search-open')
+    }
+  }
+  searchControl();
 
-//product
-// var courseApi = 'http://localhost:3000/courses'
-// fetch(courseApi)
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (course) {
-//         console.log(course)
-//     })
+function search() {
+  var resultBlock = document.querySelector('.header__search-result')
+  var inputElement = document.querySelector('.header__search-input')
+  var htmlresult = '';
+  var count = 0;
+  inputElement.oninput = function (e) {
+    if (e.target.value.length > 1) {
+      htmlresult = `<div class="loader-search">
+                  <div class="lds-dual-ring"></div>
+                </div>`
+      resultBlock.innerHTML = htmlresult
+    }
+    setTimeout(function () {
+      getProduct(function (products) {
+        htmlresult= ''
+          htmlresult = products.map(function (product) {
+            if (product.pName.toUpperCase().indexOf(e.target.value.toUpperCase()) > -1 && e.target.value.length > 1) {
+              count++;
+              return `
+                <a href="" class="header__search-result-item" title="${product.pName}">
+                  <img src="${product.img}" alt="" class="header__search-result-item-img">
+                  <div class="header__search-result-item-info">
+                    <div class="header__search-result-item-name">${product.pName}</div>
+                    <div class="header__search-result-item-price">${product.price}đ</div>
+                  </div>
+                </a>
+              `
+            }
+          })
+          htmlresult = htmlresult.join('');
+        if (count > 0) {
+          htmlresult = `<div class="header__search-result-found">${htmlresult}<a href="" class="header__search-show-all-btn">Xem tất cả</a></div>`
+        }
+        else if (e.target.value != '' && e.target.value.length > 1) {
+          htmlresult = `<div class="header__search-result-not-found">Không có kết quả tìm kiếm</div>`
+        }
+        resultBlock.innerHTML = htmlresult
+      })
+    },500)
+  } 
+}
 
         
 

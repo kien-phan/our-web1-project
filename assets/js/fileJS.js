@@ -517,7 +517,7 @@ function convertToVnd(num) {
   return num.replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 }
 function moveToTimkiem() {
-  window.location.href = "/timkiem.html"
+  window.location.href = "/timkiem.md"
 }
 
 
